@@ -106,13 +106,17 @@ The present workflow:
 
 - keeps only active runs with positive current for the main comparison plots
 - uses `25 deg C` normalized current with `1 % / deg C` compensation
-  $$
-  I_{25} = \frac{I}{1 + 0.01(T-25)}
-  $$
+
+$$
+I_{25} = \frac{I}{1 + 0.01(T-25)}
+$$
+
 - uses `25 deg C` normalized apparent resistance
-  $$
-  R_{25} = \frac{U_{\mathrm{stack}}}{I_{25}}
-  $$
+
+$$
+R_{25} = \frac{U_{\mathrm{stack}}}{I_{25}}
+$$
+
 - computes conductivity-normalized channels with `2 % / deg C` compensation
 - keeps voltage plots in measured form
 - keeps `Rlinear` as a separate processed resistance-like trend signal
