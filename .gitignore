@@ -31,8 +31,7 @@ Thumbs.db
 Desktop.ini
 
 # Generated analysis outputs
-outputs/
-outputs_plotly/
+
 
 # Optional local source copies
 # Uncomment these if you prefer to keep large/raw source files out of Git.
