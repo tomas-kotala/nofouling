@@ -120,9 +120,7 @@ So the filtered dataset is:
 
 $$
 \mathcal{D}_{\mathrm{active}} =
-\left\{
-x \in \mathcal{D} \;|\; I(x) > 0,\; v(x) \in \{2.5, 3.0, 3.5\}
-\right\}
+\{ x \in \mathcal{D} \mid I(x) > 0,\; v(x) \in \{2.5, 3.0, 3.5\} \}
 $$
 
 This removes the polarity-reversal cleaning segments with negative current from the default comparison plots.
@@ -270,7 +268,7 @@ and not as a complete mechanistic model.
 
 ## Short Version
 
-> [!SUMMARY]
+> [!NOTE]
 > The data manipulation pipeline does five main things:
 > 1. splits the CSV into separate runs
 > 2. keeps only active runs at `2.5`, `3.0`, and `3.5 cm/s`

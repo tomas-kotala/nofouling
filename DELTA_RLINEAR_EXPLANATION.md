@@ -1,6 +1,6 @@
 # Delta Rlinear Explanation
 
-> [!summary]
+> [!NOTE]
 > `delta_rlinear` is a simple per-run fouling-growth metric.
 > I compute it as the increase of `Rlinear` relative to the start of the active electrodialysis run:
 >
@@ -12,7 +12,7 @@
 
 ## 1. What `Rlinear` means here
 
-> [!note]
+> [!NOTE]
 > In the CSV there are two resistance-related columns:
 > - `Resistance (Ohm)`
 > - `Rlinear`
@@ -30,7 +30,7 @@
 >
 > instead of relying on the CSV `Resistance (Ohm)` column directly.
 
-> [!important]
+> [!IMPORTANT]
 > This is partly an inference from the dataset structure and the paper context.
 > The article explains that the data were processed to reduce temperature effects and then filtered/resampled.
 > So `Rlinear` is useful as a cleaner trend variable, while `Resistance (Ohm)` is still worth plotting as the direct measured quantity.
@@ -58,7 +58,7 @@ $$
 
 This forces every run to start at zero and makes the curves comparable as "growth from that run's own baseline".
 
-> [!example]
+> [!WARNING]
 > If one run starts at `3.8` and ends at `18.6`, and another starts at `4.3` and ends at `5.8`, the absolute end values tell only part of the story.
 >
 > The deltas make the difference explicit:
@@ -130,7 +130,7 @@ From the current run summaries:
 - `3.5 cm/s`, `0.1 M` increases more progressively, from about `1.5` at low current to about `14.1` at the highest current
 - `0.2 M` cases are much smaller overall, except for a clear jump at higher current in `3.0 cm/s`
 
-> [!insight]
+> [!NOTE]
 > The main value of `delta_rlinear` is that it separates "how much the run changed" from "where the run started".
 > That is why it is useful for comparing fouling trajectories between `2.5`, `3.0`, and `3.5 cm/s`.
 
@@ -155,7 +155,7 @@ So the two views answer different questions:
 
 ## 7. Human summary
 
-> [!abstract]
+> [!WARNING]
 > Read `delta_rlinear` as:
 > "How much extra resistance did this run build up since the active cycle started?"
 >
