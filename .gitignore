@@ -1,0 +1,45 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and test artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+personal/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and OS files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# Generated analysis outputs
+outputs/
+outputs_plotly/
+
+# Optional local source copies
+# Uncomment these if you prefer to keep large/raw source files out of Git.
+# dataRaw.csv
+# 1-s2.0-S2352340920306570-main.pdf
+
+# Local override or scratch files
+*.tmp
+*.bak
+*.log
